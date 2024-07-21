@@ -3,3 +3,61 @@
 *::after {
     box-sizing: border-box;
 }
+
+body {
+    background-color: #ffffff;
+    /* Light mode background color */
+    color: #000000;
+    /* Light mode text color */
+}
+
+body.dark-mode {
+    background-color: #333333;
+    /* Dark mode background color */
+    color: #ffffff;
+    /* Dark mode text color */
+}
+
+.header {
+    border: 1px solid red;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+h1 {
+    /* justify-content: center; */
+    display: flex;
+    flex: 1 1 80%;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    flex: 1 1 20%;
+    justify-content: center;
+    gap: 60px;
+}
+
+button {
+    padding: 30px;
+    background: 100%;
+}
+
+h2 .form-container {
+    display: flex;
+    border: 1px solid blue;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.toggle-mode {
+    background-image: url('/images/1310649.png');
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
