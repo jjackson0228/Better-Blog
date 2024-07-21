@@ -61,3 +61,10 @@ h2 .form-container {
     height: 50px;
     width: 50px;
 }
+
+.back-button {
+    background-image: url('/images/594564(1).png');
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+}
