@@ -15,5 +15,3 @@ submitBlog.addEventListener("click", function (event) {
 
   window.location.href = "post.html";
 });
-
-console.error("Element with ID 'submit-post' not found.");
