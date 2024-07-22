@@ -16,3 +16,21 @@ submitBtn.addEventListener("click", function (event) {
   //redirect to new page
   window.location.href = "blog.html";
 });
+
+const submitBlog = document.getElementById("submit-post");
+
+if (submitBlog) {
+  submitBlog.addEventListener("click", function (event) {
+    event.preventDefault();
+    const blogTitle = document.getElementById("blog-title").value;
+    const blogContent = document.getElementById("blog-content").value;
+
+    const blogData = {
+      title: blogTitle,
+      content: blogContent,
+    };
+    localStorage.setItem("blogData", JSON.stringify(blogData));
+
+    window.location.href = "post.html";
+  });
+}
